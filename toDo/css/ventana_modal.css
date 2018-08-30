@@ -1,0 +1,146 @@
+.container__modal {
+    position: fixed;
+    background: rgba(0, 0, 0, .2);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .15s linear;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+    
+  .container_modal_body {
+    width: 50%;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+  }
+  
+  .modal__header {
+    width: 100%;
+  }
+  
+  .container__modal__icons {
+    display: flex;
+  }
+  
+  .close--icon {
+    justify-content: flex-end;
+    font-size: 1.2rem;
+  }
+  
+  .close--icon .fas:hover {
+    cursor: pointer;
+    color: #c7c7c7;
+  }
+  
+  .lock--icon {
+    justify-content: flex-start;
+  }
+  
+  .contenedor_icons {
+    justify-content: flex-start;
+  }
+  
+  #task--icon:before {
+    display: flex;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #c7c7c7;
+    color: #005cff;
+    font-size: 1.4rem;
+  }
+  
+  .modal__body {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  
+  .modal__body h2 {
+    color: #686464;
+  }
+  
+  .modal__body p {
+    color: #353333;
+  }
+  
+  .container__modal__form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .element__modal__form {
+    float: left;
+    width: 100%;
+    margin-top: 1rem;
+    padding: .75rem;
+    border: 1px solid #ccc;
+  }
+  
+  .element__modal__form:focus {
+    outline: none;
+  }
+  
+  .container__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  .button {
+    padding: 1rem;
+    margin: 1rem 0 0 1.5rem;
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    color: #a7a7a7;
+  }
+  
+  .button--cancel:hover {
+    background: #005cff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .button--submit, .button--modificar, .button--eliminar {
+    background: #005cff;
+    color: #fff;
+  }
+  
+  .button--submit:hover, .button--modificar:hover, .button--eliminar:hover {
+    background: transparent;
+    color: #a7a7a7;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1200px) {
+    .container__modal {
+      width: 68%;
+    }
+  
+  }
+  
+  @media (max-width: 991px) {
+    .container__modal {
+      width: 100%;
+      padding: 2rem;
+    }
+  
+  }
+    
+  @media (max-width: 400px) {
+    .container {
+      padding: 1rem;
+    }
+  
+  }
+  
